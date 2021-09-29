@@ -27,6 +27,7 @@ type Alog struct {
 func New(w io.Writer) *Alog {
 	if w == nil {
 		w = os.Stdout
+
 	}
 	return &Alog{
 		dest:    w,
